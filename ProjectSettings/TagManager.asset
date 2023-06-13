@@ -13,7 +13,7 @@ TagManager:
   - UI
   - GroundCollider
   - Ground
-  - 
+  - Deco
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: col
     uniqueID: 1461922291
+    locked: 0
+  - name: UI
+    uniqueID: 2999048375
     locked: 0
