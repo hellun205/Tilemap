@@ -60,14 +60,17 @@ namespace UI
         uiObj.sprite = item.Key.sprite;
         uiObj.itemName = item.Key._name;
         uiObj.count = item.Value;
-        uiObj.interAction = GetItem;
+        uiObj.interAction = SellItem;
         items.Add(uiObj);
       }
     }
 
-    private void GetItem(PointerEventData obj, int index)
+    private void SellItem(PointerEventData obj, int index)
     {
-
+      var item = inventory.items.Keys.ToList()[index];
+      inventory.RemoveItem(item, 1);
+      Timer.Instance.AddTime(2f);
+      Refresh();
     }
 
     private void Clear()
