@@ -3,7 +3,7 @@ using System;
 namespace Item
 {
   [Serializable]
-  public struct CountableItem
+  public class CountableItem
   {
     public ItemData item;
     
