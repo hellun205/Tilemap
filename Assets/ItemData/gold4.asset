@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 392ded491d0f4bf7a63cffd63b4ae40c, type: 3}
-  m_Name: sword
+  m_Name: gold4
   m_EditorClassIdentifier: 
-  _name: "\uB2E8\uAC80"
+  _name: "\uAE08\uD654\uB4E4"
   descriptions: 
-  sprite: {fileID: -1612758652, guid: d868d1d0d4b728642947ba21c057031b, type: 3}
+  sprite: {fileID: -422666170, guid: d868d1d0d4b728642947ba21c057031b, type: 3}
