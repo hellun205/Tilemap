@@ -23,12 +23,7 @@ namespace Isometric.Player
         interactableObject = interactableObj;
       }
       
-      if (!isInteracting && interactableObject is not null)
-      {
-        Debug.Log(interactableObject.name);
-        interactableObject.Interact();
-        isInteracting = true;
-      }
+      Interact();
     }
 
     private void OnTriggerExit2D(Collider2D col)
@@ -47,11 +42,20 @@ namespace Isometric.Player
 
     private void Update()
     {
-      // if (!isInteracting && Input.GetKeyDown(key) && interactableObject is not null)
+      // if (Input.GetKeyDown(key))
       // {
-      //   Debug.Log(interactableObject.name);
-      //   interactableObject.Interact();
+      //   Interact();
       // }
+    }
+
+    private void Interact()
+    {
+      if (!isInteracting && interactableObject is not null)
+      {
+        Debug.Log(interactableObject.name);
+        interactableObject.Interact();
+        isInteracting = true;
+      }
     }
   }
 }
