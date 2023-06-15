@@ -4,7 +4,7 @@ using Utils;
 
 namespace Isometric
 {
-  public class CameraController : MonoBehaviour
+  public sealed class CameraController : MonoBehaviour
   {
     public float smoothSpeed = 2f;
     private Transform target;

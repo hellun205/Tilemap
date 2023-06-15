@@ -37,7 +37,5 @@ namespace UI
     }
 
     public void AddTime(float amount) => timer += amount;
-    
-    
   }
 }

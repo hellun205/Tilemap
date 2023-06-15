@@ -11,7 +11,7 @@ using UnityEngine.EventSystems;
 
 namespace UI
 {
-  public class ChestUI : SingleTon<ChestUI>
+  public sealed class ChestUI : SingleTon<ChestUI>
   {
     private PanelVisibler panelVisibler;
 

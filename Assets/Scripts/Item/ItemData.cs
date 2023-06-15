@@ -7,9 +7,6 @@ namespace Item
   {
     public string _name;
 
-    [Multiline]
-    public string descriptions;
-
     public Sprite sprite;
   }
 }

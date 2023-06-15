@@ -4,17 +4,16 @@ using UnityEngine;
 
 namespace Isometric.Deco
 {
-  public class Cat : InteractableObject
+  public sealed class Cat : InteractableObject
   {
-    [SerializeField]
-    private Animator anim;
+    public Animator anim;
     
     public override void Interact()
     {
       base.Interact();
       if (GameManager.Instance.isComplete)
       {
-
+        GameManager.Instance.CompleteMission(this);
       }
       else
       {

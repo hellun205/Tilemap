@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Isometric.Deco
 {
-  public class WarpTent : InteractableObject
+  public sealed class WarpTent : InteractableObject
   {
     public WarpTent destination;
 

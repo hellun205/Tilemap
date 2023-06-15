@@ -12,7 +12,7 @@ using UnityEngine.EventSystems;
 
 namespace UI
 {
-  public class InventoryUI : SingleTon<InventoryUI>
+  public sealed class InventoryUI : SingleTon<InventoryUI>
   {
     private PanelVisibler panelVisibler;
 
@@ -68,8 +68,10 @@ namespace UI
     private void SellItem(PointerEventData obj, int index)
     {
       var item = inventory.items.Keys.ToList()[index];
+      if (Items.Instance.crystals.Any(x => x == item))
+        return;
       inventory.RemoveItem(item, 1);
-      Timer.Instance.AddTime(2f);
+      Timer.Instance.AddTime(0.7f);
       Refresh();
     }
 

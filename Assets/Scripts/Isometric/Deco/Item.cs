@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Isometric.Deco
 {
-  public class Item : InteractableObject
+  public sealed class Item : InteractableObject
   {
     private SpriteRenderer sr;
     [NonSerialized]

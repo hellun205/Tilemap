@@ -1,7 +1,26 @@
-﻿namespace Isometric.Deco
+﻿using System;
+using Item;
+using UnityEngine;
+using Utils;
+using Random = UnityEngine.Random;
+
+namespace Isometric.Deco
 {
-  public class RandomJar : BigJar
+  public sealed class RandomJar : Jar
   {
-    
+    [Header("Random Var")]
+    public byte length = 1;
+    public byte minCount = 1;
+    public byte maxCount = 1;
+
+    private void Start()
+    {
+      var itemList = Items.Instance.items;
+      for (var i = 0; i < length; i++)
+      {
+        var randomItem = itemList.Random();
+        items.Add(new CountableItem(randomItem, (uint)Random.Range(minCount, maxCount + 1)));
+      }
+    }
   }
 }

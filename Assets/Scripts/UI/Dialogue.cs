@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace UI
 {
-  public class Dialogue : SingleTon<Dialogue>
+  public sealed class Dialogue : SingleTon<Dialogue>
   {
     [SerializeField]
     private Animator anim;
