@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Isometric.Deco
 {
-  public class Chest :  CollectableObject
+  public class Chest : RandomCollectableObject
   {
     public override void Interact()
     {

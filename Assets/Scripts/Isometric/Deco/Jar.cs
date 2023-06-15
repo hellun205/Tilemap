@@ -6,7 +6,7 @@ using Utils;
 
 namespace Isometric.Deco
 {
-  public class Jar : CollectableObject
+  public class Jar : RandomCollectableObject
   {
     [SerializeField]
     private Item itemPrefab;

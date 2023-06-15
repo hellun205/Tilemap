@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using Isometric.Deco;
 using Isometric.Player;
@@ -23,13 +24,20 @@ namespace Isometric
     [SerializeField]
     private GameObject failPanel;
 
+    [SerializeField]
+    private List<CollectableObject> haveCrystalObj = new();
+
     protected override void Awake()
     {
       base.Awake();
       var collectors = FindObjectsOfType<CollectableObject>();
 
       foreach (var crystal in requireItems)
-        collectors.Random().items.Add(new(crystal, 1));
+      {
+        var random = collectors.Random();
+        random.items.Add(new(crystal, 1));
+        haveCrystalObj.Add(random);
+      }
     }
 
     private void Start()

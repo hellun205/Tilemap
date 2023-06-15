@@ -135,18 +135,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 48466554832872917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e0e0f76e041bebcf93986b1d1734b, type: 3}
+  m_Script: {fileID: 11500000, guid: be87cfce8bdc412eb8aca7ffe02e608e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   needKeyDown: 1
   isInteractable: 0
   items: []
+  set: {fileID: 11400000, guid: a51e4b66445cb4743b8cc03d181d8640, type: 2}
   itemPrefab: {fileID: 507771055994545848, guid: 6367bff542e1d6242aae4940f8173b64, type: 3}
   trans: {fileID: 48466555996544114}
   anim: {fileID: 48466554832872905}
-  length: 10
-  minCount: 1
-  maxCount: 2
 --- !u!1 &48466555996544115
 GameObject:
   m_ObjectHideFlags: 0
