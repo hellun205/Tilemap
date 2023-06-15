@@ -14,8 +14,8 @@ TagManager:
   - GroundCollider
   - Ground
   - Deco
-  - 
-  - 
+  - Minimap
+  - Player
   - 
   - 
   - 
