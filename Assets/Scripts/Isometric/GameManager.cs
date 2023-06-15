@@ -8,6 +8,7 @@ using Manager;
 using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Utils;
 
 namespace Isometric
 {
@@ -21,6 +22,15 @@ namespace Isometric
     
     [SerializeField]
     private GameObject failPanel;
+
+    protected override void Awake()
+    {
+      base.Awake();
+      var collectors = FindObjectsOfType<CollectableObject>();
+
+      foreach (var crystal in requireItems)
+        collectors.Random().items.Add(new(crystal, 1));
+    }
 
     private void Start()
     {

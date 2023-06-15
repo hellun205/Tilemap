@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8227015461958320713}
   - component: {fileID: 8227015461958320726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plains-sliced_67
   m_TagString: Untagged
   m_Icon: {fileID: 0}

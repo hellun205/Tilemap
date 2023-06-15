@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Isometric.Player;
 using Item;
-using UI;
 using UnityEngine;
 using Utils;
 
 namespace Isometric.Deco
 {
-  public class Jar : InteractableObject
+  public class Jar : CollectableObject
   {
-    public List<CountableItem> items;
-
     [SerializeField]
     private Item itemPrefab;
 

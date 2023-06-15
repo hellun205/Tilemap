@@ -6,10 +6,8 @@ using UnityEngine;
 
 namespace Isometric.Deco
 {
-  public class Chest : InteractableObject
+  public class Chest :  CollectableObject
   {
-    public List<CountableItem> items;
-    
     public override void Interact()
     {
       base.Interact();
@@ -24,5 +22,6 @@ namespace Isometric.Deco
       
       ChestUI.Instance.Close();
     }
+
   }
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274149666723104004}
   - component: {fileID: 1274149666723104003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: desert-sliced_64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274149667092171902}
   - component: {fileID: 1274149667092171901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: desert-sliced_66
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274149667765655290}
   - component: {fileID: 1274149667765655289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: desert-sliced_65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274149667782695283}
   - component: {fileID: 1274149667782695282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: desert-sliced_67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 1274149667906403666}
   - component: {fileID: 2805318186749300685}
   - component: {fileID: 4109324769250593856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,6 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd95c48564642df9345d10e97b8ff58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  needKeyDown: 0
   isInteractable: 0
   destination: {fileID: 2805318186749300685}
   warpTrans: {fileID: 7424423515832127894}
@@ -417,7 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274149668730170474}
   - component: {fileID: 1274149668730170473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7424423515832127894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: trans
   m_TagString: Untagged
   m_Icon: {fileID: 0}
